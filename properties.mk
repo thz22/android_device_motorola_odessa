@@ -14,6 +14,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.sf.color_mode=0
 
+# Chipset
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=QTI \
+    ro.soc.model=SM7150
+
 # Sensor
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.hardware.sensors=odessa \
