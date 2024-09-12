@@ -24,12 +24,6 @@ $(call inherit-product, device/motorola/odessa/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Matrixx
-MATRIXX_MAINTAINER := ThiagoDias
-MATRIXX_CHIPSET := SM730G
-MATRIXX_BATTERY := 5000mah
-MATRIXX_DISPLAY := 1080x2400
-
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
