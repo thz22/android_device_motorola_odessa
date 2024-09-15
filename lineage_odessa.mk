@@ -25,11 +25,12 @@ $(call inherit-product, device/motorola/odessa/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Flags
-BUILD_SEEDVAULT := false
-TARGET_USES_MINI_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Sign Build
+-include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_odessa
