@@ -1,34 +1,11 @@
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true
 
-# LMK
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.log_stats=false
-ro.lmk.upgrade_pressure=60
-ro.lmk.use_minfree_levels=true
-ro.lmk.use_new_strategy=true
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.swap_free_low_percentage=20
-ro.lmk.filecache_min_kb=110592
-
 # Logd
 ro.logd.kernel=false
 
-# Memory Management
-ro.sys.fw.bservice_enable=true
-ro.sys.fw.bservice_limit=5
-ro.sys.fw.bservice_age=5000
-ro.am.reschedule_service=true
-ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
-ro.config.dha_cached_max=16
-ro.config.dha_empty_max=42
-ro.config.dha_empty_init=32
-ro.config.dha_lmk_scale=0.545
-ro.config.dha_th_rate=2.3
-ro.config.sdha_apps_bg_max=32
-ro.config.sdha_apps_bg_min=8
+# GFX
+ro.config.avoid_gfx_accel=true
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
