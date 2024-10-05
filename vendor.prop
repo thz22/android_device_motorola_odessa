@@ -3,11 +3,3 @@ persist.device_config.activity_manager.use_compaction=true
 
 # Logd
 ro.logd.kernel=false
-
-# GFX
-ro.config.avoid_gfx_accel=true
-
-# ZRAM
-ro.zram.mark_idle_delay_mins=60
-ro.zram.first_wb_delay_mins=1440
-ro.zram.periodic_wb_delay_hours=24
