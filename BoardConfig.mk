@@ -27,9 +27,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/odessa_defconfig
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
     snd-soc-aw882xx.ko:snd_smartpa_aw882xx.ko
