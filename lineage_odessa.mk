@@ -29,6 +29,9 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Signing Build
+-include vendor/lineage-priv/keys/keys.mk
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_odessa
 PRODUCT_DEVICE := odessa
