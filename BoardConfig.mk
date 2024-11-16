@@ -25,7 +25,7 @@ TARGET_SCREEN_DENSITY := 420
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/odessa_defconfig
+TARGET_KERNEL_CONFIG := vendor/liber_defconfig
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
