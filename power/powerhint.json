@@ -5,9 +5,6 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1612000",
-        "1497000",
-        "1324000",
         "1248000"
       ],
       "DefaultIndex": 0,
@@ -19,10 +16,7 @@
       "Values": [
         "9999999",
         "1248000",
-        "1017000",
-        "768000",
-        "576000",
-        "300000",
+        "576000"
       ],
       "ResetOnInit": true
     },
@@ -32,8 +26,6 @@
       "Values": [
         "9999999",
         "1939200",
-        "1843200",
-        "1708200",
         "1555200"
       ],
       "DefaultIndex": 0,
@@ -45,12 +37,8 @@
       "Values": [
         "9999999",
         "1555200",
-        "1209000",
-        "1094000",
-        "979000",
-        "806000",
-        "652800",
-        "300000"
+        "1248000",
+        "652800"
       ],
       "ResetOnInit": true
     },
@@ -108,7 +96,7 @@
       "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
       "Values": [
         "10000",
-        "60"
+        "80"
       ],
       "ResetOnInit": true
     },
@@ -118,6 +106,15 @@
       "Values": [
         "40",
         "10"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "TASchedtuneHighCap",
+      "Path": "/dev/stune/top-app/schedtune.prefer_high_cap",
+      "Values": [
+        "1",
+        "0"
       ],
       "ResetOnInit": true
     },
@@ -261,11 +258,11 @@
     },
     {
       "Name": "DoubleTapToWakeEnable",
-      "Path": "/sys/touchpanel/double_tap",
+      "Path": "/sys/devices/virtual/touch/touch_dev/double_tap",
       "Values": [
         "1",
         "0"
-      ]
+      ],
     },
     {
       "Name": "PowerHALMainState",
@@ -334,6 +331,12 @@
     },
     {
       "PowerHint": "INTERACTION",
+      "Node": "TASchedtuneHighCap",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 0,
       "Value": "0"
@@ -365,25 +368,25 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "EnergyAware",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "9999999"
     },
     {
@@ -395,61 +398,61 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystLength",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHistMemory",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWMinFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "14236"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceClkOn",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceRailOn",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "10000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "LLCCBWMinFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "6881"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3LittleClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "1459200000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
-      "Duration": 3000,
+      "Duration": 5000,
       "Value": "1459200000"
     },
     {
@@ -489,7 +492,7 @@
       "Value": "0"
     },
     {
-      "PowerHint": "ML_ACC",
+      "PowerHint": "TPU_BOOST",
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 2000,
       "Value": "44"
@@ -501,9 +504,10 @@
       "Value": "1"
     },
     {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Type": "EndHint",
-      "Value": "DISPLAY_UPDATE_IMMINENT"
+      "PowerHint": "ML_ACC",
+      "Node": "PMQoSCpuDmaLatency",
+      "Duration": 2000,
+      "Value": "44"
     }
   ]
 }
