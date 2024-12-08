@@ -31,7 +31,7 @@ TARGET_BOARD_PLATFORM := sm6150
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay-custom
 
 PRODUCT_PACKAGES += \
