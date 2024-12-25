@@ -19,7 +19,7 @@
 DEVICE_PATH := device/motorola/odessa
 
 # Display
-TARGET_SCREEN_DENSITY := 400
+TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/odessa_defconfig
