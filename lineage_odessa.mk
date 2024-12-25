@@ -30,7 +30,7 @@ TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Signing Build
-#-include vendor/lineage-priv/keys/keys.mk
+-include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_odessa
@@ -43,9 +43,8 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Build info
-BUILD_FINGERPRINT := "motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=odessa_retail \
-    PRIVATE_BUILD_DESC="odessa_retail-user 11 RPAS31.Q2-59-17-4-5-5 af8e3 release-keys"
+    BuildDesc="odessa_retail-user 11 RPAS31.Q2-59-17-4-5-5 af8e3 release-keys" \
+    BuildFingerprint=motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys    
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
