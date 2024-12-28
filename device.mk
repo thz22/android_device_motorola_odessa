@@ -26,9 +26,6 @@ $(call inherit-product, vendor/motorola/odessa/odessa-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
-# Dolby
-$(call inherit-product, hardware/motorola/dolby/setup.mk)
-
 # Board
 TARGET_BOARD_PLATFORM := sm6150
 
