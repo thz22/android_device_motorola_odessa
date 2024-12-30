@@ -29,12 +29,15 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# RisingFlags
+RISING_MAINTAINER="Thiago"
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true 
+
 # Signing Build
 -include vendor/lineage-priv/keys/keys.mk
-
-# gms
-$(call inherit-product, vendor/gms/gms_mini.mk)
-WITH_GMS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_odessa
@@ -49,6 +52,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="odessa_retail-user 11 RPAS31.Q2-59-17-4-5-5 af8e3 release-keys" \
-    BuildFingerprint=motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys    
+    BuildFingerprint=motorola/odessa_retail/odessa:11/RPAS31.Q2-59-17-4-5-5/af8e3:user/release-keys \
+    RisingChipset="Snapdragon 730G" \
+    RisingMaintainer="Thiago"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
