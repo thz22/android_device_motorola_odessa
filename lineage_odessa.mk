@@ -30,11 +30,7 @@ TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Signing Build
-#-include vendor/lineage-priv/keys/keys.mk
-
-# gms
-#$(call inherit-product, vendor/gms/gms_mini.mk)
-#WITH_GMS := true
+-include vendor/lineage-priv/keys/keys.mk
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_odessa
