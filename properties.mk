@@ -19,3 +19,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.hardware.sensors=odessa \
     ro.vendor.sensors.mot_ltv=true \
     ro.vendor.sensors.glance_approach=false
+
+# LOS
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.lineage.maintainer=ThiagoJurema
