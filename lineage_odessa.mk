@@ -29,6 +29,9 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# aospa gms
+$(call inherit-product, vendor/google/gms/gms-vendor.mk)
+
 # Signing Build
 -include vendor/lineage-priv/keys/keys.mk
 
