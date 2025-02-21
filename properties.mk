@@ -22,7 +22,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # LOS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.lineage.maintainer=Thiago
+    ro.lineage.maintainer=dias.thiago
 
 # SIM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
